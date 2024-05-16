@@ -1,18 +1,58 @@
 body{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0 auto;
     background-color: black !important;
-color: white !important;
+    color: white !important;
 }
 
 #grid-calculadora{
-    background-color: purple;
+    background-color: black;
+    border: 2px solid grey;
+    border-radius: 10px;
     padding: 20px;
     margin: 0 auto;
-    width: auto;
+    width: 30em;
     height: auto;
 }
 
+#resultado-calculadora{
+    background-color: orangered;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+#txt-resultado{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: end;
+    padding: 5px;
+    color: white;
+}
+
+/* Formatação de todos os botões */
 .botoes{
-    margin: 5px;
+    margin: 1px auto;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Botoes de operação */
+.btn-operacao{
+    background-color: orange;
+}
+
+/* Botoes de numeros */
+.btn-numeros{
+    background-color: grey;
+}
+
+#btn-resultado{
+    background-color: orangered;
+    color: white;
 }
 
 .resultado{
