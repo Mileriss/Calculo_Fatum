@@ -1,0 +1,22 @@
+body{
+    background-color: black !important;
+color: white !important;
+}
+
+#grid-calculadora{
+    background-color: purple;
+    padding: 20px;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
+
+.botoes{
+    margin: 5px;
+}
+
+.resultado{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
