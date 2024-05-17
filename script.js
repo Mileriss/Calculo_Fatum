@@ -1,3 +1,4 @@
+// Variaveis para todos os botoes da calculadora
 var btn_0 = document.getElementById("btn-0")
 var btn_1 = document.getElementById("btn-1")
 var btn_2 = document.getElementById("btn-2")
@@ -16,16 +17,20 @@ var btn_subtracao = document.getElementById("btn-subtracao")
 var btn_adicao = document.getElementById("btn-adicao")
 var btn_resultado = document.getElementById("btn-resultado")
 
+// Lista armazenando todos os botoes
 const botoes = document.getElementsByClassName("botoes")
 
-function Add_Valor(value){
+// Vai adicionar o valor clicado na tela da aplicação
+function AdicionaValor(value){
     document.getElementById("tela-resultado").value += value;
 }
 
-function Del_Valor(){
+// Deleta tudo que estiver escrito na tela da aplicação
+function DeletaTudo(){
     document.getElementById("tela-resultado").value = ""
 }
 
+// Vai realizar a operação que estiver descrita no botão clicado (Soma, Subtração, Multiplicação e Divisão)
 function Operacao(){
     var tela_resultado = document.getElementById("tela-resultado").value
     try{
@@ -33,5 +38,15 @@ function Operacao(){
         document.getElementById('tela-resultado').value = resultado;
     }catch (error){
         document.getElementById('tela-resultado').value = 'Error'
+    }
+}
+
+// Deleta o ultimo digito que estiver na tela da aplicação
+function DeletarValor() {
+    var tela_resultado = document.getElementById("tela-resultado");
+    var currentValue = tela_resultado.value;
+    
+    if (currentValue.length > 0) {
+        tela_resultado.value = currentValue.slice(0, -1);
     }
 }
