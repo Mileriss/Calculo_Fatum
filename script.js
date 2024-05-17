@@ -16,27 +16,28 @@ var btn_multiplicacao = document.getElementById("btn-multiplicacao")
 var btn_subtracao = document.getElementById("btn-subtracao")
 var btn_adicao = document.getElementById("btn-adicao")
 var btn_resultado = document.getElementById("btn-resultado")
+var tela_resultado = document.getElementById("tela-resultado")
 
 // Lista armazenando todos os botoes
 const botoes = document.getElementsByClassName("botoes")
 
 // Vai adicionar o valor clicado na tela da aplicação
-function AdicionaValor(value){
+function AdicionaValor(value) {
     document.getElementById("tela-resultado").value += value;
 }
 
 // Deleta tudo que estiver escrito na tela da aplicação
-function DeletaTudo(){
+function DeletaTudo() {
     document.getElementById("tela-resultado").value = ""
 }
 
 // Vai realizar a operação que estiver descrita no botão clicado (Soma, Subtração, Multiplicação e Divisão)
-function Operacao(){
+function Operacao() {
     var tela_resultado = document.getElementById("tela-resultado").value
-    try{
+    try {
         var resultado = eval(tela_resultado);
         document.getElementById('tela-resultado').value = resultado;
-    }catch (error){
+    } catch (error) {
         document.getElementById('tela-resultado').value = 'Error'
     }
 }
@@ -45,8 +46,31 @@ function Operacao(){
 function DeletarValor() {
     var tela_resultado = document.getElementById("tela-resultado");
     var currentValue = tela_resultado.value;
-    
+
     if (currentValue.length > 0) {
         tela_resultado.value = currentValue.slice(0, -1);
     }
 }
+
+
+// Função para lidar com eventos de teclado e permitir apenas números
+function DigitaValor(event) {
+    // Obtém o código da tecla pressionada
+    var cod_tecla = event.keyCode || event.which;
+
+    // Verifica se a tecla pressionada é um número
+    if (cod_tecla >= 48 && cod_tecla <= 57) {
+
+        // Obtém o valor da tecla pressionada
+        var tecla = String.fromCharCode(cod_tecla);
+
+        // Obtém o elemento de input
+        var input = document.getElementById("tela-resultado");
+
+        // Adiciona o valor da tecla ao input
+        input.value += tecla;
+    }
+}
+
+// Adiciona um ouvinte de evento para capturar as teclas pressionadas
+document.addEventListener("keydown", DigitaValor);
