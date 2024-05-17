@@ -19,17 +19,20 @@ body{
 }
 
 #resultado-calculadora{
-    background-color: orangered;
     border-radius: 5px;
-    margin: 5px auto;
+    margin: 10px auto;
 }
 
-#txt-resultado{
+#tela-resultado {
     font-size: 30px;
     font-weight: bold;
     text-align: end;
-    padding: 5px;
-    color: white;
+    color: black;
+    padding: auto;
+    margin: 0 auto;
+    height: 100%;
+    background-color: orangered;
+    width: 100%;
 }
 
 /* Formatação de todos os botões */
