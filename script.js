@@ -55,22 +55,11 @@ function DeletarValor() {
 
 // Função para lidar com eventos de teclado e permitir apenas números
 function DigitaValor(event) {
-    // Obtém o código da tecla pressionada
     var cod_tecla = event.keyCode || event.which;
-
-    // Verifica se a tecla pressionada é um número
     if (cod_tecla >= 48 && cod_tecla <= 57) {
-
-        // Obtém o valor da tecla pressionada
         var tecla = String.fromCharCode(cod_tecla);
-
-        // Obtém o elemento de input
         var input = document.getElementById("tela-resultado");
-
-        // Adiciona o valor da tecla ao input
         input.value += tecla;
     }
 }
-
-// Adiciona um ouvinte de evento para capturar as teclas pressionadas
 document.addEventListener("keydown", DigitaValor);
