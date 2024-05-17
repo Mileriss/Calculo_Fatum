@@ -20,31 +20,30 @@
             <input type="text" id="tela-resultado" disabled value="0">
         </div>
         <div id="simbolos-" class="row">
-            <input id="btn-del" type="button" class="botoes btn-operacao col-3" value="C" onclick="Del_Valor()">
-            <input id="btn-backspace" type="button" class="botoes btn-operacao col-6" value="Backspace">
-            <input id="btn-porcentagem" type="button" class="botoes btn-operacao col-3" value="%" onclick="Add_Valor('%')">
+            <input id="btn-del" type="button" class="botoes btn-operacao col-3" value="C" onclick="DeletaTudo()">
+            <input id="btn-backspace" type="button" class="botoes btn-operacao col-6" value="Backspace" onclick="DeletarValor()">
+            <input id="btn-porcentagem" type="button" class="botoes btn-operacao col-3" value="%" onclick="AdicionaValor('%')">
         </div>
         <div id="789x" class="row">
-            <input id="btn-7" type="button" class="botoes btn-numeros col" value="7" onclick="Add_Valor('7')">
-            <input id="btn-8" type="button" class="botoes btn-numeros col" value="8" onclick="Add_Valor('8')">
-            <input id="btn-9" type="button" class="botoes btn-numeros col" value="9" onclick="Add_Valor('9')">
-            <input id="btn-multiplicacao" type="button" class="botoes btn-operacao col" value="*" onclick="Add_Valor('*')">
+            <input id="btn-7" type="button" class="botoes btn-numeros col" value="7" onclick="AdicionaValor('7')">
+            <input id="btn-8" type="button" class="botoes btn-numeros col" value="8" onclick="AdicionaValor('8')">
+            <input id="btn-9" type="button" class="botoes btn-numeros col" value="9" onclick="AdicionaValor('9')">
+            <input id="btn-multiplicacao" type="button" class="botoes btn-operacao col" value="*" onclick="AdicionaValor('*')">
         </div>
         <div id="456-" class="row">
-            <input id="btn-4" type="button" class="botoes btn-numeros col" value="4" onclick="Add_Valor('4')">
-            <input id="btn-5" type="button" class="botoes btn-numeros col" value="5" onclick="Add_Valor('5')">
-            <input id="btn-6" type="button" class="botoes btn-numeros col" value="6" onclick="Add_Valor('6')">
-            <input id="btn-subtracao" type="button" class="botoes btn-operacao col" value="-" onclick="Add_Valor('-')">
+            <input id="btn-4" type="button" class="botoes btn-numeros col" value="4" onclick="AdicionaValor('4')">
+            <input id="btn-5" type="button" class="botoes btn-numeros col" value="5" onclick="AdicionaValor('5')">
+            <input id="btn-6" type="button" class="botoes btn-numeros col" value="6" onclick="AdicionaValor('6')">
+            <input id="btn-subtracao" type="button" class="botoes btn-operacao col" value="-" onclick="AdicionaValor('-')">
         </div>
         <div id="123+" class="row">
-            <input id="btn-1" type="button" class="botoes btn-numeros col" value="1" onclick="Add_Valor('1')">
-            <input id="btn-2" type="button" class="botoes btn-numeros col" value="2" onclick="Add_Valor('2')">
-            <input id="btn-3" type="button" class="botoes btn-numeros col" value="3" onclick="Add_Valor('3')">
-            <input id="btn-adicao" type="button" class="botoes btn-operacao col" value="+" onclick="Add_Valor('+')">
+            <input id="btn-1" type="button" class="botoes btn-numeros col" value="1" onclick="AdicionaValor('1')">
+            <input id="btn-2" type="button" class="botoes btn-numeros col" value="2" onclick="AdicionaValor('2')">
+            <input id="btn-3" type="button" class="botoes btn-numeros col" value="3" onclick="AdicionaValor('3')">
+            <input id="btn-adicao" type="button" class="botoes btn-operacao col" value="+" onclick="AdicionaValor('+')">
         </div>
         <div id=",0+" class="row">
-            <input id="btn-virgula" type="button" class="botoes btn-operacao col" value="," onclick="Add_Valor(',')">
-            <input id="btn-0" type="button" class="botoes btn-numeros col" value="0" onclick="Add_Valor('0')">
+            <input id="btn-0" type="button" class="botoes btn-numeros col" value="0" onclick="AdicionaValor('0')">
             <input id="btn-resultado" type="button" class="botoes btn-operacao col" value="=" onclick="Operacao()">
         </div>
     </div>
