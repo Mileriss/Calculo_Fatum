@@ -3,32 +3,43 @@ body{
     color: white !important;
 }
 
-#navbar{
-    background-color: red;
-    margin-bottom: 5em;
+/*
+_  _ ____ _  _ ___  ____ ____ 
+|\ | |__| |  | |__] |__| |__/ 
+| \| |  |  \/  |__] |  | |  \
+*/
 
+#navbar{
+    position: sticky;
+    backdrop-filter: blur(10px);
+    margin-bottom: 5em;
 }
 
 #div-nav{
     display: flex;
     justify-content: space-around;
-    background-color: grey;
+    backdrop-filter: blur(10px);
+    border: 1.5px solid white;
+    border-radius: 5px;
+    padding: 10px;
+
 }
 
 #lista-nav{
-    background-color: orange;
+    margin: 0 auto;
 }
 
 .nav-item{
-    border: 2px solid green;
-    margin-right: 10px;
+    border-radius: 5px;
+    background-color: slategray;
+    margin: 7px;
 }
 
-.nav-link{
-    background-color: brown;
-}
-
-
+/*
+____ ____ _    ____ _  _ _    ____ ___  ____ ____ ____ 
+|    |__| |    |    |  | |    |__| |  \ |  | |__/ |__| 
+|___ |  | |___ |___ |__| |___ |  | |__/ |__| |  \ |  |
+*/
 
 #grid-calculadora{
     background-color: black;
