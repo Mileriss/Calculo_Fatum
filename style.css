@@ -1,12 +1,34 @@
 body{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    margin: 0 auto;
     background-color: black !important;
     color: white !important;
 }
+
+#navbar{
+    background-color: red;
+    margin-bottom: 5em;
+
+}
+
+#div-nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+}
+
+#lista-nav{
+    background-color: orange;
+}
+
+.nav-item{
+    border: 2px solid green;
+    margin-right: 10px;
+}
+
+.nav-link{
+    background-color: brown;
+}
+
+
 
 #grid-calculadora{
     background-color: black;
