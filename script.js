@@ -9,7 +9,7 @@ var btn_6 = document.getElementById("btn-6")
 var btn_7 = document.getElementById("btn-7")
 var btn_8 = document.getElementById("btn-8")
 var btn_9 = document.getElementById("btn-9")
-var btn_porcentagem = document.getElementById("btn-porcentagem")
+var btn_divisao = document.getElementById("btn-divisao")
 var btn_del = document.getElementById("btn-del")
 var btn_backspace = document.getElementById("btn-backspace")
 var btn_multiplicacao = document.getElementById("btn-multiplicacao")
@@ -53,7 +53,7 @@ function DeletarValor() {
 }
 
 
-// Função para lidar com eventos de teclado e permitir apenas números
+// Permite inserir os digitos através do teclado físico 
 function DigitaValor(event) {
     var cod_tecla = event.keyCode || event.which;
     if (cod_tecla >= 48 && cod_tecla <= 57) {
